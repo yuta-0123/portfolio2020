@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="HEADER">
+        <!-- ナビバーの開始 -->
+        <nav id="pc-nav" class="pc-nav">
+            <div class="logo-wrap">
+               <a href="index.html"><img class="header-logo" src="img/logo-dark.png" alt="ロゴ"></a> 
+            </div>
+            <ul>
+                <li><a href="#HOME">Home</a></li>
+                <li><a href="#VISION">Vision</a></li>
+                <li><a href="#WORKS">Works</a></li>
+                <li><a href="#ABOUT">About</a></li>
+            </ul>
+        </nav>
+        <!-- スマホサイズ(600px以下で表示) ハンバーガーメニュー ここから-->
+        <div class="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="sp-nav">
+            <ul>
+                <li><a href="#HOME">Home</a></li>
+                <li><a href="#VISION">Vision</a></li>
+                <li><a href="#WORKS">Works</a></li>
+                <li><a href="#ABOUT">About</a></li>
+            </ul>
+        </nav>
+        <!-- スマホサイズ(600px以下で表示) ハンバーガーメニュー ここまで-->  
+    </header>
+    <main>
+        <section id="HOME">
+            <div class="section_home">
+                <div class="bg-overlay"></div>
+                <div class="section_home_catch">
+                    <p><span></span>感動を生みだす、エンジニアになる</p>
+                </div>
+            </div>
+        </section>
+        <section id="VISION">
+            <h2 class="section_title">VISION</h2>
+            <div class="section_vision_wrap">
+                <div class="vision_items_wrap">
+                    <div class="vision_item">
+                        <p>感動を生みだす、エンジニアになる</p>
+                        <h4>理由について</h4>
+                        <p>自分自身が遊び心を持ち続けて、<br>人の心を動かすきっかけとなるものを生み出したいからです。</p>
+                        <h4>実現のために必要だと思うこと</h4>
+                        <p>人に感動を生み出すには、デザインを追求する必要があると考えます。<br>
+                            デザインを追求するという、抽象から具象までを行き来し、<br>
+                            本質を突く設計をすることで、良いものが創れると思っております。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="WORKS">
+            <h2 class="section_title">WORKS</h2>
+            <div class="section_works_items">
+                <div class="section_works_item">
+                    <h4 class="item_title">BootStrapでサイト模写</h4>
+                    <div class="img-wrap">
+                        <img src="img/works/bootstrap.png" alt="">
+                    </div>
+                </div>
+                <div class="section_works_item">
+                    <h4 class="item_title">PHPで掲示板</h4>
+                    <div class="img-wrap">
+                        <img src="img/works/miniphp.png" alt="">
+                    </div>
+                </div>
+                <div class="section_works_item">
+                    <h4 class="item_title">Nuxt.jsでメモアプリ</h4>
+                    <div class="img-wrap">
+                        <img src="img/works/memo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="ABOUT">
+            <h2 class="section_title">ABOUT</h2>
+            <div class="section_about_wrap">
+                
+                <div class="section_about_img-wrap">
+                    <img src="img/profile.jpg" alt="">
+                </div>
+                <div class="section_about_table_wrap">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>氏名</th>
+                                <td>福田 勇太</td>
+                            </tr>
+                            <tr>
+                                <th>学歴</th>
+                                <td>中央大学理工学部在学</td>
+                            </tr>
+                            <tr>
+                                <th>活動</th>
+                                <td>Webサイト制作を全般にフリーランスとして活動中。<br>他には、経理作業や空間デザインのお手伝いなど。</td>
+                            </tr>                 
+                        </tbody>
+                    </table>
+                </div>
+            </div> 
+        </section>
+        
+    </main>
+    <footer class="footer">
+        <small class="text-muted mb-0">Copyright &copy; Fukuda portfolio 2020</small>
+    </footer>
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

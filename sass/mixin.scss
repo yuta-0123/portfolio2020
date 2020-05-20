@@ -1,0 +1,38 @@
+$pink: #e65f78;
+$black:#1A2944;
+$gray:#6c757d;
+
+
+body {
+    color      : $gray;
+    font-family: 'Montserrat', sans-serif;
+    font-style : normal;
+}
+
+a,
+a:hover,
+a:focus,
+button,
+button:focus {
+    text-decoration: none !important;
+    outline        : none !important;
+    box-shadow     : none !important;
+}
+
+.section_title {
+    font-size: 40px;
+    color: $pink;
+    text-align: center;
+    padding-top: 70px;
+}
+
+#WORKS,#ABOUT {
+    .section_title {
+        padding-bottom: 70px;
+    }
+}
+
+.section_sb-title {
+    padding-top: 10px;
+    text-align: center;
+}
