@@ -220,7 +220,7 @@ button:focus {
           font-size: 40px; } }
       @media (max-width: 767px) {
         .section_home .section_home_catch p {
-          font-size: 30px; } }
+          font-size: 23px; } }
 
 #VISION {
   text-align: center; }
@@ -416,6 +416,9 @@ button:focus {
   padding: 20px;
   font-size: 20px;
   color: #e65f78; }
+  @media (max-width: 767px) {
+    .activities_title h5 {
+      font-size: 18px; } }
 
 .jobs_wrap {
   flex-wrap: wrap;
