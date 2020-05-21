@@ -220,7 +220,7 @@ button:focus {
           font-size: 40px; } }
       @media (max-width: 767px) {
         .section_home .section_home_catch p {
-          font-size: 23px; } }
+          font-size: 20px; } }
 
 #VISION {
   text-align: center; }
@@ -328,13 +328,17 @@ button:focus {
   box-sizing: border-box; }
   @media (max-width: 767px) {
     .item_box {
-      width: 90%;
-      margin: 30px auto; } }
+      width: 94%;
+      margin: 30px auto;
+      padding: 20px 10px; } }
   .item_box h5 {
     text-align: center;
     font-size: 20px;
     padding-top: 10px;
     padding-bottom: 10px; }
+    @media (max-width: 767px) {
+      .item_box h5 {
+        font-size: 18px; } }
 
 .skills_wrap {
   width: 70%;
