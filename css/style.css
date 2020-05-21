@@ -220,7 +220,7 @@ button:focus {
           font-size: 40px; } }
       @media (max-width: 767px) {
         .section_home .section_home_catch p {
-          font-size: 22px; } }
+          font-size: 21px; } }
 
 #VISION {
   text-align: center; }
@@ -261,6 +261,9 @@ button:focus {
 .section_work_this .work_box {
   width: 50%;
   margin: 20px auto; }
+  @media (max-width: 767px) {
+    .section_work_this .work_box {
+      width: 90%; } }
 .section_work_this .github-link {
   margin: 0 auto 50px; }
 

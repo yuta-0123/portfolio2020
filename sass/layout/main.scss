@@ -31,7 +31,7 @@
                 font-size: 40px; 
             }
             @include sp {
-                font-size: 22px; 
+                font-size: 21px; 
             }
         }
     }
@@ -95,6 +95,9 @@
     .work_box {
         width: 50%;
         margin: 20px auto;
+        @include sp {
+            width: 90%; 
+        }
     }
     .github-link {
         margin: 0 auto 50px;
