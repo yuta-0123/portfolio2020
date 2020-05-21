@@ -8,25 +8,3 @@
 @import "layout/main.scss"; // body
 
 
-// レイアウト幅
-$layout-width-inner: 1180px;
-
-$breakpoints: ("sp": "screen and (max-width: 767px)",
-    "tab": "screen and (max-width: #{$layout-width-inner - 1px})",
-    "pc": "screen and (min-width: #{$layout-width-inner})",
-);
-
-// Responsiveタブレット対応
-@mixin tab {
-    @media(min-width: 768px) and (max-width: $layout-width-inner - 1px) {
-        @content;
-    }
-}
-
-// Responsiveスマホ対応
-@mixin sp {
-    @media(max-width: 767px) {
-        @content;
-    }
-}
-

@@ -1,3 +1,8 @@
+@charset "utf-8";
+
+// ===========================================
+// HOME
+// ===========================================
 .section_home {
     height: 100vh;
     background-image: url(../../img/background3.JPG);
@@ -22,73 +27,99 @@
             font-weight: 350;
             font-size: 50px;
             white-space: nowrap;
+            @include tab {
+                font-size: 40px; 
+            }
             @include sp {
-                font-size: 27px; 
-                white-space: unset;
+                font-size: 30px; 
             }
         }
     }
 }
 
+// ===========================================
+// VISION
+// ===========================================
+
 #VISION {
     text-align: center;
+    @include sp {
+        p{
+            text-align: left;
+        }
+    }
 }
 
 .section_vision_wrap {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 
     h4 {
         padding-top: 30px;
-        font-size: 20px;
+        font-size: 17px;
         color: $pink;
     }
     p {
-        padding-top: 30px;
+        padding-top: 20px;
         font-size: 25px;
         font-weight: 400;
         line-height: 40px;
         @include sp {
-            font-size: 20px; 
-        }
-        &:nth-child(1){
-            font-weight: 600;
+            font-size: 18px; 
         }
     }
     
 }
 
-.section_about_wrap {
-    display: flex;
-    width: 90%;
-    margin: 0 auto;
-    .section_about_img-wrap {
-        width: 40vw;
-        img {
-            width: 100%;
-        }
+.br-pc {
+    display: block;
+    @include tab {
+        display: none;
     }
-
-}
-
-.section_about_table_wrap {
-    padding: 30px;
-    table {
-        font-size: 20px;
-        th {
-            font-weight: normal;
-            padding: 15px;
-        }
+    @include sp {
+        display: none;
     }
 }
 
+// ===========================================
+// WORKS
+// ===========================================
+#WORKS {
+    background-color: $background-gray;
+}
+
+.section_work_this{
+    .this_work {
+        text-align: center;
+    }
+    .work_box {
+        width: 50%;
+        margin: 20px auto;
+    }
+    .github-link {
+        margin: 0 auto 50px;
+    }
+}
 .section_works_items {
     width: 90vw;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    @include tab {
+        display: block;
+    }
+    @include sp {
+        display: block;
+    }
+    
     .section_works_item{
         width: 27%;
+        @include tab {
+            width: 100%;
+        }
+        @include sp {
+            width: 100%;
+        }
         .item_title {
             padding: 15px;
             text-align: center;
@@ -97,33 +128,192 @@
             width: 100%;
             height: 300px;
             overflow: hidden;
-            position: relative;
-            cursor: pointer;
-            &:after {
-                content: " ";
-                display: block;
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                border-radius: 5px;
-                transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
-            }
-           
-            img {
-                width: 100%;
-                transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
-                border-radius: 0;
-            }
-           
-
         }
-        &:hover {
-            .img-wrap:after{
-                background: rgba(0, 0, 0, 0.8);
+        .item_detail{
+            .item_detail_table {
+                width: 84%;
             }
-            
+        }
+    }
+}
+.github-link {
+    margin: 10px auto;
+    text-align: center;
+    a {
+        font-size: 20px;
+        color: $pink;
+    }
+}
+// ===========================================
+// SKILLS
+// ===========================================
+
+#SKILLS {
+    background-color: rgb(253, 239, 249);
+}
+.section_skills_items_wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    @include sp {
+        display: block;
+        width: 88%;
+    }
+}
+
+.icon_wrap {
+    text-align: center;
+    padding: 20px;
+    i {
+        font-size: 55px;
+        color: $pink;
+    }
+}
+.item_box {
+    padding: 20px;
+    border: solid 1px $gray;
+    border-radius: 15px;
+    width: 43%;
+    box-sizing: border-box;
+    @include sp {
+        width: 90%;
+        margin: 30px auto;
+    }
+    h5 {
+        text-align: center;
+        font-size: 20px;
+        padding-top:10px;
+        padding-bottom: 10px;
+    }
+}
+
+.skills_wrap{
+    width: 70%;
+    margin:20px auto 30px;
+    @include sp {
+        width: 80%;
+    }
+}
+    
+.skills_boxes_title{
+    h5 {
+        padding-top: 70px;
+        padding-bottom: 40px;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+.skills_boxes_wrap {
+    flex-wrap: wrap;
+    overflow: hidden;
+    .skill_box{
+        width: 21%;
+        margin: 10px 20px;
+        border: solid 1px $pink;
+        box-sizing: border-box;
+        float: left;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        @include tab {
+            width: 40%;
+            padding: 10px;
+            margin: 10px;
+        }
+        @include sp {
+            width: 40%;
+            padding: 10px;
+            margin: 10px;
+        }
+        p {
+            font-size: 20px;
+            font-weight: normal;
+        }
+    }
+}
+
+.is_sp {
+    display: none;
+    @include sp {
+        display: block;
+    }
+}
+
+// ===========================================
+// ABOUT ME
+// ===========================================
+
+.section_about_table_wrap {
+    padding: 30px;
+    position: relative;
+    @include sp {
+        padding: 5px;
+    }
+    table {
+        th {
+            @include tab {
+                white-space: nowrap;
+            }
+            @include sp {
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+.section_about_wrap {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    @include sp {
+       display: block;
+    }
+    .section_about_img-wrap {
+        width: 40vw;
+        @include tab {
+            width:60vw;
+        }
+        @include sp {
+            width: 100%;
+        }
+        img {
+            width: 100%;
+        }
+    }
+
+}
+.activities_title {
+    h5 {
+        padding: 20px;
+        font-size: 20px;
+        color: $pink;
+    }
+}
+
+.jobs_wrap {
+    flex-wrap: wrap;
+    overflow: hidden;
+    .job_item{
+        width: 27%;
+        margin: 10px;
+        border: solid 1px $pink;
+        box-sizing: border-box;
+        float: left;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        @include tab {
+            width: 40%;
+            padding: 10px;
+        }
+        @include sp {
+            width: 40%;
+        }
+        p {
+            font-size: 20px;
+            font-weight: normal;
         }
     }
 }

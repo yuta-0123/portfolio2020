@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>portfolio</title>
+    <link rel="shortcut icon" href="img/favicon2.ico">
     <link rel="stylesheet" href="css/reset.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -18,6 +20,7 @@
                 <li><a href="#HOME">Home</a></li>
                 <li><a href="#VISION">Vision</a></li>
                 <li><a href="#WORKS">Works</a></li>
+                <li><a href="#SKILLS">Skills</a></li>
                 <li><a href="#ABOUT">About</a></li>
             </ul>
         </nav>
@@ -32,6 +35,7 @@
                 <li><a href="#HOME">Home</a></li>
                 <li><a href="#VISION">Vision</a></li>
                 <li><a href="#WORKS">Works</a></li>
+                <li><a href="#SKILLS">Skills</a></li>
                 <li><a href="#ABOUT">About</a></li>
             </ul>
         </nav>
@@ -51,12 +55,13 @@
             <div class="section_vision_wrap">
                 <div class="vision_items_wrap">
                     <div class="vision_item">
+                        <h4>目指したい姿</h4>
                         <p>感動を生みだす、エンジニアになる</p>
                         <h4>理由について</h4>
                         <p>自分自身が遊び心を持ち続けて、<br>人の心を動かすきっかけとなるものを生み出したいからです。</p>
                         <h4>実現のために必要だと思うこと</h4>
-                        <p>人に感動を生み出すには、デザインを追求する必要があると考えます。<br>
-                            デザインを追求するという、抽象から具象までを行き来し、<br>
+                        <p>人に感動を生み出すには、デザインを追求する必要があると考えます。<br class="br-pc" />
+                            デザインを追求するという、抽象(戦略)から具象(表層)までを行き来し、<br class="br-pc" />
                             本質を突く設計をすることで、良いものが創れると思っております。</p>
                     </div>
                 </div>
@@ -64,36 +69,225 @@
         </section>
         <section id="WORKS">
             <h2 class="section_title">WORKS</h2>
+            <div class="section_explanation">
+                <p>これまでに制作した作品について</p>
+                <div class="github-link">
+                    <a href="https://github.com/yuta-0123">Git hubページへ</a>
+                </div>
+            </div>   
+            <div class="section_work_this_wrap">
+                <div class="section_work_this">
+                    <h4 class="this_work">ポートフォリオ</h4>
+                    <div class="work_box">
+                        <div class="img-wrap">
+                            <img src="img/works/portfolio.png" alt="">
+                        </div>
+                        <div class="item_detail">
+                            <table class="item_detail_table">
+                                <tbody>
+                                    <tr>
+                                        <th>制作時期</th>
+                                        <td>2020年5月</td>
+                                    </tr>
+                                    <tr>
+                                        <th>言語</th>
+                                        <td>html，Sass</td>
+                                    </tr>
+                                    <tr>
+                                        <th>作成した意図</th>
+                                        <td>就活のため</td>
+                                    </tr>
+                                    <tr>
+                                        <th>工夫した点</th>
+                                        <td>Sassファイルの分割</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="github-link">
+                        <a href="https://github.com/yuta-0123/portfolio2020">Git hubページへ</a>
+                    </div>
+                </div>
+            </div>     
             <div class="section_works_items">
                 <div class="section_works_item">
                     <h4 class="item_title">BootStrapでサイト模写</h4>
-                    <div class="img-wrap">
-                        <img src="img/works/bootstrap.png" alt="">
+                    <div class="work_box">
+                        <div class="img-wrap">
+                            <img src="img/works/bootstrap.png" alt="">
+                        </div>
+                        <div class="item_detail">
+                            <table class="item_detail_table">
+                                <tbody>
+                                    <tr>
+                                        <th>制作時期</th>
+                                        <td>2020年2月</td>
+                                    </tr>
+                                    <tr>
+                                        <th>言語</th>
+                                        <td>html，bootstrap</td>
+                                    </tr>
+                                    <tr>
+                                        <th>作成した意図</th>
+                                        <td>スタイルを効率的に行うため</td>
+                                    </tr>
+                                    <tr>
+                                        <th>工夫した点</th>
+                                        <td>画像をスライダーにしたこと</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
                 <div class="section_works_item">
                     <h4 class="item_title">PHPで掲示板</h4>
-                    <div class="img-wrap">
-                        <img src="img/works/miniphp.png" alt="">
+                    <div class="work_box">
+                        <div class="img-wrap">
+                            <img src="img/works/miniphp.png" alt="">
+                        </div>
+                        <div class="item_detail">
+                            <table class="item_detail_table">
+                                <tbody>  
+                                    <tr>
+                                        <th>制作時期</th>
+                                        <td>2019年12月</td>
+                                    </tr>
+                                    <tr>
+                                        <th>言語</th>
+                                        <td>PHP</td>
+                                    </tr>
+                                    <tr>
+                                        <th>作成した意図</th>
+                                        <td>バックエンド言語を学ぶため</td>
+                                    </tr>
+                                    <tr>
+                                        <th>工夫した点</th>
+                                        <td>XAMPPを用いたこと</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
                 <div class="section_works_item">
                     <h4 class="item_title">Nuxt.jsでメモアプリ</h4>
-                    <div class="img-wrap">
-                        <img src="img/works/memo.png" alt="">
+                    <div class="work_box">
+                        <div class="img-wrap">
+                            <img src="img/works/memo.png" alt="">
+                        </div>
+                        <div class="item_detail">
+                            <table class="item_detail_table">
+                                <tbody>
+                                    <tr>
+                                        <th>制作時期</th>
+                                        <td>2020年2月</td>
+                                    </tr>
+                                    <tr>
+                                        <th>言語</th>
+                                        <td>nuxt.js</td>
+                                    </tr>
+                                    <tr>
+                                        <th>作成した意図</th>
+                                        <td>より高度なアプリケーションを作成するため</td>
+                                    </tr>                                   
+                                    <tr>
+                                        <th>工夫した点</th>
+                                        <td>firebaseを用いたこと</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section id="SKILLS">
+            <h2 class="section_title">Skills</h2>  
+            <div class="section_explanation">
+                <p>これまでに取り組んだWeb制作のお仕事と、学習している開発言語について</p>
+            </div>         
+            <div class="section_skills_items_wrap">
+                <div class="item_box">
+                    <div class="icon_wrap"><i class="fas fa-laptop-code"></i></div>
+                    <h5 >エンジニア転職サービスのLP制作</h5>
+                    <table class="section_table">
+                        <tbody>
+                            <tr>
+                                <th>言語</th>
+                                <td>html，Sass</td>
+                            </tr>
+                            <tr>
+                                <th>制作時期</th>
+                                <td>2020年4月</td>
+                            </tr>
+                            <tr>
+                                <th>コーディング人数</th>
+                                <td>2人</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+               
+                <div class="item_box">
+                    <div class="icon_wrap"><i class="fas fa-laptop-code"></i></div>
+                    <h5>化粧品会社のWebサイト制作</h5>
+                    <table class="section_table">
+                        <tbody>
+                            <tr>
+                                <th>ツール</th>
+                                <td>docker</td>
+                            </tr>
+                            <tr>
+                                <th>言語</th>
+                                <td>Pug，Sass</td>
+                            </tr>
+                            <tr>
+                                <th>制作時期</th>
+                                <td>2020年4月~5月</td>
+                            </tr>
+                            <tr>
+                                <th>コーディング人数</th>
+                                <td>2人</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>                
+            </div>
+            <div class="skills_wrap">
+                <div class="skills_boxes_title">
+                    <h5>これまでに学習してきた言語</h5>
+                </div>
+                <div class="skills_boxes_wrap">
+                    <div class="skill_box">
+                        <p>html(pug)</p>
+                    </div>
+                    <div class="skill_box">
+                        <p>css(sass)</p>
+                    </div>
+                    <div class="skill_box">
+                        <p>javascript</p>
+                    </div>
+                    <div class="skill_box">
+                        <p>php</p>
+                    </div>
+                    <div class="skill_box">
+                        <p>vue.js<br class="is_sp">(nuxt.js)</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
         <section id="ABOUT">
-            <h2 class="section_title">ABOUT</h2>
+            <h2 class="section_title">ABOUT ME</h2>
             <div class="section_about_wrap">
                 
                 <div class="section_about_img-wrap">
                     <img src="img/profile.jpg" alt="">
                 </div>
                 <div class="section_about_table_wrap">
-                    <table>
+                    <table class="section_table">
                         <tbody>
                             <tr>
                                 <th>氏名</th>
@@ -105,19 +299,39 @@
                             </tr>
                             <tr>
                                 <th>活動</th>
-                                <td>Webサイト制作を全般にフリーランスとして活動中。<br>他には、経理作業や空間デザインのお手伝いなど。</td>
-                            </tr>                 
+                                <td>プログラミングと株式会社心電でインターン(お手伝い)</td>
+                            </tr>                                
                         </tbody>
                     </table>
+                    <div class="activities_wrap">
+                        <div class="activities_title">
+                            <h5>株式会社心電でのお手伝いの内容</h5>
+                        </div>
+                        <div class="jobs_wrap">
+                            <div class="job_item">
+                                Webサイト制作
+                            </div>
+                            <div class="job_item">
+                                空間デザイン
+                            </div>
+                            <div class="job_item">
+                                経理
+                            </div>
+                            <div class="job_item">
+                                撮影
+                            </div>
+                            <div class="job_item">
+                                イベントのスタッフ
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div> 
         </section>
-        
     </main>
     <footer class="footer">
-        <small class="text-muted mb-0">Copyright &copy; Fukuda portfolio 2020</small>
+        <small>Copyright &copy; Fukuda portfolio 2020</small>
     </footer>
-    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/index.js"></script>
 </body>

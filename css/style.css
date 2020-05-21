@@ -18,14 +18,61 @@ button:focus {
   font-size: 40px;
   color: #e65f78;
   text-align: center;
-  padding-top: 70px; }
+  padding-top: 70px;
+  padding-bottom: 50px; }
 
-#WORKS .section_title, #ABOUT .section_title {
-  padding-bottom: 70px; }
+#VISION, #WORKS, #SKILLS, #ABOUT {
+  padding-bottom: 50px; }
 
-.section_sb-title {
-  padding-top: 10px;
+.section_explanation {
+  font-size: 20px;
+  padding-bottom: 50px;
   text-align: center; }
+
+.section_table {
+  font-size: 20px; }
+  .section_table th {
+    font-weight: normal;
+    padding: 15px; }
+
+.work_box {
+  position: relative;
+  cursor: pointer; }
+  .work_box .img-wrap:after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1); }
+  .work_box:hover .img-wrap:after {
+    background: rgba(0, 0, 0, 0.8); }
+  .work_box:hover .item_detail {
+    width: 100%;
+    top: 50%;
+    left: 0%;
+    transform: translate(0, -50%);
+    color: white;
+    transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+    opacity: 1;
+    box-sizing: border-box;
+    position: absolute;
+    display: block; }
+    .work_box:hover .item_detail .item_detail_table {
+      width: 50%;
+      margin: 0 auto; }
+      .work_box:hover .item_detail .item_detail_table th {
+        padding: 10px;
+        font-weight: normal; }
+  .work_box .item_detail {
+    opacity: 0;
+    overflow: hidden;
+    display: none; }
+  .work_box img {
+    width: 100%; }
 
 .pc-nav {
   width: 100%;
@@ -175,80 +222,229 @@ button:focus {
       font-weight: 350;
       font-size: 50px;
       white-space: nowrap; }
+      @media (min-width: 768px) and (max-width: 1179px) {
+        .section_home .section_home_catch p {
+          font-size: 40px; } }
       @media (max-width: 767px) {
         .section_home .section_home_catch p {
-          font-size: 27px;
-          white-space: unset; } }
+          font-size: 30px; } }
 
 #VISION {
   text-align: center; }
+  @media (max-width: 767px) {
+    #VISION p {
+      text-align: left; } }
 
 .section_vision_wrap {
-  width: 90%;
+  width: 80%;
   margin: 0 auto; }
   .section_vision_wrap h4 {
     padding-top: 30px;
-    font-size: 20px;
+    font-size: 17px;
     color: #e65f78; }
   .section_vision_wrap p {
-    padding-top: 30px;
+    padding-top: 20px;
     font-size: 25px;
     font-weight: 400;
     line-height: 40px; }
     @media (max-width: 767px) {
       .section_vision_wrap p {
-        font-size: 20px; } }
-    .section_vision_wrap p:nth-child(1) {
-      font-weight: 600; }
+        font-size: 18px; } }
 
-.section_about_wrap {
-  display: flex;
-  width: 90%;
-  margin: 0 auto; }
-  .section_about_wrap .section_about_img-wrap {
-    width: 40vw; }
-    .section_about_wrap .section_about_img-wrap img {
-      width: 100%; }
+.br-pc {
+  display: block; }
+  @media (min-width: 768px) and (max-width: 1179px) {
+    .br-pc {
+      display: none; } }
+  @media (max-width: 767px) {
+    .br-pc {
+      display: none; } }
 
-.section_about_table_wrap {
-  padding: 30px; }
-  .section_about_table_wrap table {
-    font-size: 20px; }
-    .section_about_table_wrap table th {
-      font-weight: normal;
-      padding: 15px; }
+#WORKS {
+  background-color: #f8f9fa; }
+
+.section_work_this .this_work {
+  text-align: center; }
+.section_work_this .work_box {
+  width: 50%;
+  margin: 20px auto; }
+.section_work_this .github-link {
+  margin: 0 auto 50px; }
 
 .section_works_items {
   width: 90vw;
   margin: 0 auto;
   display: flex;
   justify-content: space-between; }
+  @media (min-width: 768px) and (max-width: 1179px) {
+    .section_works_items {
+      display: block; } }
+  @media (max-width: 767px) {
+    .section_works_items {
+      display: block; } }
   .section_works_items .section_works_item {
     width: 27%; }
+    @media (min-width: 768px) and (max-width: 1179px) {
+      .section_works_items .section_works_item {
+        width: 100%; } }
+    @media (max-width: 767px) {
+      .section_works_items .section_works_item {
+        width: 100%; } }
     .section_works_items .section_works_item .item_title {
       padding: 15px;
       text-align: center; }
     .section_works_items .section_works_item .img-wrap {
       width: 100%;
       height: 300px;
-      overflow: hidden;
-      position: relative;
-      cursor: pointer; }
-      .section_works_items .section_works_item .img-wrap:after {
-        content: " ";
-        display: block;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        border-radius: 5px;
-        transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1); }
-      .section_works_items .section_works_item .img-wrap img {
-        width: 100%;
-        transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
-        border-radius: 0; }
-    .section_works_items .section_works_item:hover .img-wrap:after {
-      background: rgba(0, 0, 0, 0.8); }
+      overflow: hidden; }
+    .section_works_items .section_works_item .item_detail .item_detail_table {
+      width: 84%; }
+
+.github-link {
+  margin: 10px auto;
+  text-align: center; }
+  .github-link a {
+    font-size: 20px;
+    color: #e65f78; }
+
+#SKILLS {
+  background-color: #fdeff9; }
+
+.section_skills_items_wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto; }
+  @media (max-width: 767px) {
+    .section_skills_items_wrap {
+      display: block;
+      width: 88%; } }
+
+.icon_wrap {
+  text-align: center;
+  padding: 20px; }
+  .icon_wrap i {
+    font-size: 55px;
+    color: #e65f78; }
+
+.item_box {
+  padding: 20px;
+  border: solid 1px #6c757d;
+  border-radius: 15px;
+  width: 43%;
+  box-sizing: border-box; }
+  @media (max-width: 767px) {
+    .item_box {
+      width: 90%;
+      margin: 30px auto; } }
+  .item_box h5 {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
+.skills_wrap {
+  width: 70%;
+  margin: 20px auto 30px; }
+  @media (max-width: 767px) {
+    .skills_wrap {
+      width: 80%; } }
+
+.skills_boxes_title h5 {
+  padding-top: 70px;
+  padding-bottom: 40px;
+  font-size: 20px;
+  text-align: center; }
+
+.skills_boxes_wrap {
+  flex-wrap: wrap;
+  overflow: hidden; }
+  .skills_boxes_wrap .skill_box {
+    width: 21%;
+    margin: 10px 20px;
+    border: solid 1px #e65f78;
+    box-sizing: border-box;
+    float: left;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px; }
+    @media (min-width: 768px) and (max-width: 1179px) {
+      .skills_boxes_wrap .skill_box {
+        width: 40%;
+        padding: 10px;
+        margin: 10px; } }
+    @media (max-width: 767px) {
+      .skills_boxes_wrap .skill_box {
+        width: 40%;
+        padding: 10px;
+        margin: 10px; } }
+    .skills_boxes_wrap .skill_box p {
+      font-size: 20px;
+      font-weight: normal; }
+
+.is_sp {
+  display: none; }
+  @media (max-width: 767px) {
+    .is_sp {
+      display: block; } }
+
+.section_about_table_wrap {
+  padding: 30px;
+  position: relative; }
+  @media (max-width: 767px) {
+    .section_about_table_wrap {
+      padding: 5px; } }
+  @media (min-width: 768px) and (max-width: 1179px) {
+    .section_about_table_wrap table th {
+      white-space: nowrap; } }
+  @media (max-width: 767px) {
+    .section_about_table_wrap table th {
+      white-space: nowrap; } }
+
+.section_about_wrap {
+  display: flex;
+  width: 90%;
+  margin: 0 auto; }
+  @media (max-width: 767px) {
+    .section_about_wrap {
+      display: block; } }
+  .section_about_wrap .section_about_img-wrap {
+    width: 40vw; }
+    @media (min-width: 768px) and (max-width: 1179px) {
+      .section_about_wrap .section_about_img-wrap {
+        width: 60vw; } }
+    @media (max-width: 767px) {
+      .section_about_wrap .section_about_img-wrap {
+        width: 100%; } }
+    .section_about_wrap .section_about_img-wrap img {
+      width: 100%; }
+
+.activities_title h5 {
+  padding: 20px;
+  font-size: 20px;
+  color: #e65f78; }
+
+.jobs_wrap {
+  flex-wrap: wrap;
+  overflow: hidden; }
+  .jobs_wrap .job_item {
+    width: 27%;
+    margin: 10px;
+    border: solid 1px #e65f78;
+    box-sizing: border-box;
+    float: left;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px; }
+    @media (min-width: 768px) and (max-width: 1179px) {
+      .jobs_wrap .job_item {
+        width: 40%;
+        padding: 10px; } }
+    @media (max-width: 767px) {
+      .jobs_wrap .job_item {
+        width: 40%; } }
+    .jobs_wrap .job_item p {
+      font-size: 20px;
+      font-weight: normal; }
 
 /*# sourceMappingURL=style.css.map */
