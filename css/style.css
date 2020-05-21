@@ -201,7 +201,7 @@ button:focus {
 
 .section_home {
   height: 100vh;
-  background-image: url(../../img/background3.JPG);
+  background-image: url(../../img/background.png);
   position: relative;
   background-size: cover;
   background-position: center center; }
@@ -361,7 +361,7 @@ button:focus {
   overflow: hidden; }
   .skills_boxes_wrap .skill_box {
     width: 21%;
-    margin: 10px 20px;
+    margin: 10px 17px;
     border: solid 1px #e65f78;
     box-sizing: border-box;
     float: left;
@@ -428,7 +428,7 @@ button:focus {
   flex-wrap: wrap;
   overflow: hidden; }
   .jobs_wrap .job_item {
-    width: 27%;
+    width: 30%;
     margin: 10px;
     border: solid 1px #e65f78;
     box-sizing: border-box;
