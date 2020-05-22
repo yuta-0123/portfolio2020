@@ -5,6 +5,19 @@ $black:#1A2944;
 $gray:#6c757d;
 $background-gray:#f8f9fa;
 
+$layout-width-inner: 1180px;
+
+@mixin tab {
+    @media(min-width: 768px) and (max-width: $layout-width-inner - 1px) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media(max-width: 767px) {
+        @content;
+    }
+}
 
 body {
     color      : $gray;
@@ -102,16 +115,3 @@ button:focus {
     }   
 }
 
-$layout-width-inner: 1180px;
-
-@mixin tab {
-    @media(min-width: 768px) and (max-width: $layout-width-inner - 1px) {
-        @content;
-    }
-}
-
-@mixin sp {
-    @media(max-width: 767px) {
-        @content;
-    }
-}

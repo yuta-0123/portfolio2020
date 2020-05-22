@@ -389,11 +389,11 @@ button:focus {
       display: block; } }
 
 .section_about_table_wrap {
-  padding: 30px;
+  padding: 20px;
   position: relative; }
   @media (max-width: 767px) {
     .section_about_table_wrap {
-      padding: 5px; } }
+      padding: 10px; } }
   @media (min-width: 768px) and (max-width: 1179px) {
     .section_about_table_wrap table th {
       white-space: nowrap; } }
@@ -403,7 +403,7 @@ button:focus {
 
 .section_about_wrap {
   display: flex;
-  width: 90%;
+  width: 94%;
   margin: 0 auto; }
   @media (max-width: 767px) {
     .section_about_wrap {
@@ -420,7 +420,7 @@ button:focus {
       width: 100%; }
 
 .activities_title h5 {
-  padding: 20px;
+  padding: 40px 20px 20px;
   font-size: 20px;
   color: #e65f78; }
   @media (max-width: 767px) {
@@ -445,10 +445,18 @@ button:focus {
         padding: 10px; } }
     @media (max-width: 767px) {
       .jobs_wrap .job_item {
-        width: 40%; } }
+        width: 40%;
+        padding: 20px 5px; } }
     .jobs_wrap .job_item p {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: normal; }
+
+.sinden-link {
+  margin: 20px; }
+  .sinden-link a {
+    font-size: 14px;
+    color: #e65f78;
+    border-bottom: 1px solid #e65f78; }
 
 .footer {
   text-align: center;

@@ -2,9 +2,9 @@
  
 /* Common
 /*------------------------------------------------------------*/
-@import "./mixin.scss";
+@import "./mixin.scss";            //共通部分
 @import "layout/header.scss";      // ヘッダー
-@import "layout/main.scss"; // body
+@import "layout/main.scss";        // body
 @import "layout/footer.scss";      // フッター
 
 
