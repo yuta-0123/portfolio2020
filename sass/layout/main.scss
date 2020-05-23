@@ -58,6 +58,8 @@
         padding-top: 30px;
         font-size: 17px;
         color: $pink;
+        cursor: pointer;
+    
     }
     p {
         padding-top: 20px;
@@ -67,6 +69,7 @@
         @include sp {
             font-size: 18px; 
         }
+        
     }
     
 }
@@ -80,6 +83,7 @@
         display: none;
     }
 }
+
 
 // ===========================================
 // WORKS
@@ -147,6 +151,13 @@
         color: $pink;
     }
 }
+
+.fadeIn {
+    opacity : 0;
+    transform: translateY(20px);
+    transition: all 1s; 
+}
+
 // ===========================================
 // SKILLS
 // ===========================================

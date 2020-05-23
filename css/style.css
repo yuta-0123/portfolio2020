@@ -234,7 +234,8 @@ button:focus {
   .section_vision_wrap h4 {
     padding-top: 30px;
     font-size: 17px;
-    color: #e65f78; }
+    color: #e65f78;
+    cursor: pointer; }
   .section_vision_wrap p {
     padding-top: 20px;
     font-size: 25px;
@@ -302,6 +303,11 @@ button:focus {
   .github-link a {
     font-size: 20px;
     color: #e65f78; }
+
+.fadeIn {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s; }
 
 #SKILLS {
   background-color: #fdeff9; }
