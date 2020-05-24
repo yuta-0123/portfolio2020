@@ -1,11 +1,10 @@
 @charset "utf-8";
-
 // ===========================================
 // HOME
 // ===========================================
 .section_home {
     height: 100vh;
-    background-image: url(../img/background3.JPG);
+    background-image: url(../img/background.JPG);
     position: relative;
     background-size: cover;
     background-position: center center;
@@ -36,11 +35,9 @@
         }
     }
 }
-
 // ===========================================
 // VISION
 // ===========================================
-
 #VISION {
     text-align: center;
     @include sp {
@@ -49,17 +46,15 @@
         }
     }
 }
-
+// visionの説明部分
 .section_vision_wrap {
     width: 80%;
     margin: 0 auto;
-
     h4 {
         padding-top: 30px;
         font-size: 17px;
         color: $pink;
         cursor: pointer;
-    
     }
     p {
         padding-top: 20px;
@@ -69,33 +64,17 @@
         @include sp {
             font-size: 18px; 
         }
-        
-    }
-    
-}
-
-.br-pc {
-    display: block;
-    @include tab {
-        display: none;
-    }
-    @include sp {
-        display: none;
     }
 }
-
-
 // ===========================================
 // WORKS
 // ===========================================
 #WORKS {
     background-color: $background-gray;
 }
-
-.section_work_this{
-    .this_work {
-        text-align: center;
-    }
+// この作品(ポートフォリオ)について
+.section_work_portfolio{
+    text-align: center;
     .work_box {
         width: 50%;
         margin: 20px auto;
@@ -107,6 +86,7 @@
         margin: 0 auto 50px;
     }
 }
+// その他の作品について
 .section_works_items {
     width: 90vw;
     margin: 0 auto;
@@ -118,7 +98,6 @@
     @include sp {
         display: block;
     }
-    
     .section_works_item{
         width: 27%;
         @include tab {
@@ -151,19 +130,11 @@
         color: $pink;
     }
 }
-
-.fadeIn {
-    opacity : 0;
-    transform: translateY(20px);
-    transition: all 1s; 
-}
-
 // ===========================================
 // SKILLS
 // ===========================================
-
 #SKILLS {
-    background-color: rgb(253, 239, 249);
+    background-color: $background-pink;
 }
 .section_skills_items_wrap {
     display: flex;
@@ -175,7 +146,6 @@
         width: 88%;
     }
 }
-
 .icon_wrap {
     text-align: center;
     padding: 20px;
@@ -205,7 +175,6 @@
         }
     }
 }
-
 .skills_wrap{
     width: 70%;
     margin:20px auto 30px;
@@ -213,7 +182,6 @@
         width: 80%;
     }
 }
-    
 .skills_boxes_title{
     h5 {
         padding-top: 70px;
@@ -222,7 +190,6 @@
         text-align: center;
     }
 }
-
 .skills_boxes_wrap {
     flex-wrap: wrap;
     overflow: hidden;
@@ -251,18 +218,9 @@
         }
     }
 }
-
-.is_sp {
-    display: none;
-    @include sp {
-        display: block;
-    }
-}
-
 // ===========================================
 // ABOUT ME
 // ===========================================
-
 .section_about_table_wrap {
     padding: 20px;
     position: relative;
@@ -280,7 +238,6 @@
         }
     }
 }
-
 .section_about_wrap {
     display: flex;
     width: 94%;
@@ -300,7 +257,6 @@
             width: 100%;
         }
     }
-
 }
 .activities_title {
     h5 {
@@ -312,7 +268,6 @@
         }
     }
 }
-
 .jobs_wrap {
     flex-wrap: wrap;
     overflow: hidden;
@@ -339,8 +294,7 @@
         }
     }
 }
-
-.sinden-link {
+.company-link {
     margin: 20px;
     a {
         font-size: 14px;

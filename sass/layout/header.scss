@@ -13,16 +13,6 @@
     background: $black;
 }
 
-@mixin open_animation {
-    transition: transform 0.3s 0.1s ease;
-}
-
-@mixin sp {
-    @media(max-width: 767px) {
-        @content;
-    }
-}
-
 .pc-nav {
     width           : 100%;
     height          : 64px;
@@ -31,7 +21,6 @@
     position        : fixed;
     background-color: #fff ;
     box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.05);
-    // z-index
     z-index         : 5;
     .logo-wrap {
         padding: 10px 20px;
@@ -99,31 +88,25 @@
             &:first-child {
                 transform: translateY(-10px);
             }
-
             &:last-child {
                 transform: translateY(10px);
             }
         }
-
         &.open_active span:first-child {
             @include open_animation;
             transform: rotate(45deg);
         }
-
         &.open_active span:nth-child(2) {
             opacity   : 0;
             transition: opacity 0s 0s ease;
         }
-
         &.open_active span:last-child {
             @include open_animation;
             transform: rotate(-45deg);
         }
-
         &.close_active span:nth-child(2) {
             opacity: 1;
         }
-
     }
 }
 
@@ -158,7 +141,6 @@
         &.active {
             transform: translateX(0%);
         }
-
     }
 }
 
